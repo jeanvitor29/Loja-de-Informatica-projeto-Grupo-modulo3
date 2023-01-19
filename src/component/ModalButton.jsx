@@ -7,7 +7,7 @@ function ModalBto() {
 
   return (
     <div className='mod'>
-      <button onClick={() => setModalIsOpen(true)}>Comprar</button>
+      <button onClick={() => setModalIsOpen(true)} className='botto'>Comprar</button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}

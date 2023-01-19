@@ -1,12 +1,18 @@
-
 .imgs{
   width: 184.3px;
   }
+
+  .imagem{
+    width: 180px;
+  }
+
 .computadores{
   display: flex;
 }
 .compu{
   border: solid black 5px;
+  border-radius: 7px;
+  gap: 50px;
 }
 .compu h2{
   font-size: 20px;
@@ -17,9 +23,11 @@
 
 .perifericos{
   display: flex;
+  
 }
 .peri{
-  border: solid black 5px;
+  border: solid black 3px;
+
 }
 .peri h2{ font-size: 20px;
   display: inline;

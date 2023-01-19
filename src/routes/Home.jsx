@@ -54,7 +54,7 @@ return <div >
    
    {Peri.length === 0 ? (<p>Carregando...</p>) : (Peri.map((peri) => (
      <div className="peri" key={peri.id}>
-       <img className="imgs" src={peri.imagem} />
+       <img className="imagem" src={peri.imagem}/>
       <h2>{peri.nome}</h2>
       <h3>{peri.valor}</h3>
       <ModalBto />    

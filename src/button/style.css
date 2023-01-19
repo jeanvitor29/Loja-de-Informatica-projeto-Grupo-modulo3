@@ -1,0 +1,8 @@
+button{
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: rgba(50, 81, 145, 0.595);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

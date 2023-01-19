@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import Api from "../../axios/config";
+import Axios from "axios"
 
 
 const Minfo = () => {
@@ -18,6 +19,31 @@ const Minfo = () => {
   }
   catch(error){ console.log(error)}
 } 
+
+
+useEffect(() => {
+  Api
+   .post("https://json-server-api-resilia-loja-de.onrender.com/computadores/")
+          nome: '';
+          id:''
+          .then((response) => setUser(response.data))
+          .catch((err) => {
+            console.error("ops! ocorreu um erro" + err);
+          });
+      }, []);
+
+      useEffect(() => { 
+        id = prompt('Insira ID para deletar')
+        Api
+          .delete("https://json-server-api-resilia-loja-de.onrender.com/computadores/"+id)
+      
+          .then((response) => setUser(response.data))
+          .catch((err) => {
+            console.error("ops! ocorreu um erro" + err);
+          });
+        }, []);
+    
+
 
 useEffect(()=>{
  getInf()
@@ -43,8 +69,8 @@ return <div >
 
 
  
-
 }
+
 
 
 
